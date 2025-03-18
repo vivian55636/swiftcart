@@ -1,0 +1,19 @@
+{
+	"name": "Node.js",
+	"dockerComposeFile": ["docker-compose.yml"],
+	"service": "dev",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mongodb.mongodb-vscode",
+				"humao.rest-client",
+				"rangav.vscode-thunder-client",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-pg"
+			]
+		}
+	},
+	"remoteUser": "root",
+	"containerUser": "root"
+}

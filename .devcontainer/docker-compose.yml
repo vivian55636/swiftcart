@@ -1,0 +1,22 @@
+
+services:
+  dev:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
+    user: root
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Alwaz&4eva
+      - POSTGRES_DB=SwiftCart
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
