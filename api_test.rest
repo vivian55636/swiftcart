@@ -1,32 +1,31 @@
 ### DELETE request to delete a user 
-DELETE http://localhost:3000/users/440162
+DELETE http://localhost:3000/users/1
 
 ### GET request to retrieve one user 
-GET http://localhost:3000/users/501335
-
+GET http://localhost:3000/users/1
 
 ### PUT REQUEST TO UPDATE AN EXISTING USER
-PUT http://localhost:3000/users/922012 
+PUT http://localhost:3000/users/1 
 Content-Type: application/json
+Content-Length: <length>
 
 {
-    "user_id": 922012,
+    "user_id": 1,
     "username": "Yolo", 
     "password": "mynameyolo",
     "first_name": "Yummy Lee",
     "last_name": "Black", 
     "email": "yummy_reahme@gmail.com",
     "phone": "9059821122", 
-    "address": "13 portsmouth rd, Cambridge Ontario, r2h 7f7 CA", 
-};
-
+    "address": "13 portsmouth rd, Cambridge Ontario, r2h 7f7 CA"
+}
 
 ### POST REQUEST TO CREATE A RETURNING USER 
 POST http://localhost:3000/users 
 Content-Type: application/json
+Content-Length: <length>
 
 {
-    "user_id": 641233,
     "username": "Beehives",
     "password": "beezule",
     "first_name": "Bishark",
@@ -34,4 +33,4 @@ Content-Type: application/json
     "email": "Reshark606@gmail.com",
     "phone": "9054269821",
     "address": "78 alexis way, Hamilton Ontario, j7s 1v1 CA"
-};
+}

@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "postgres",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "username": "postgres",
+            "database": "SwiftCart",
+            "password": "Alwaz&4eva",
+            "name": "postgres"
+        }
+    ]
+}
